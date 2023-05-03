@@ -20,7 +20,7 @@ def index():
 
 @app.route("/predict", methods = ['POST']) 
 def predict(): 
-    data_json = request.get_json() 
+    data_json = request.get_json()
     sepal_length_cm = data_json['sepal_length_cm'] 
     sepal_width_cm = data_json['sepal_width_cm'] 
 
